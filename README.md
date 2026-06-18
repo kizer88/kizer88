@@ -2,7 +2,7 @@ When this all started and you're the person figuring out how to build AI systems
 
 I came at it from the other direction though. Deep in the trenches of systems administration, you learn what technology looks like when people actually rely on it. You learn even faster what it means when it goes down. I worked the tickets, the outages, the late-night troubleshooting, the environments where people lean on infrastructure they can't always see clearly.
 
-The foundation is enterprise infrastructure: Walmart Security Operations, high-level NOC escalation, large-scale endpoint management, manufacturing IT, SCCM/MECM, PowerShell automation, vulnerability remediation. At HP I worked across Corvallis, Singapore, and Penang, moving the environment off McAfee onto CrowdStrike and building remediation for TLS, SMB, Sweet32, RC4, RDP, and the rest.
+The foundation is enterprise infrastructure: Security Operations, high-level NOC escalation, large-scale endpoint management, manufacturing IT, SCCM/MECM, PowerShell automation, vulnerability remediation.
 
 The challenge wasn't just the scale. It was the distance. A lot of that work was remote. No onsite access, no hands on the machines, no watching a script run in real time on hardware halfway around the world. That changes how you build. Every action has to report what it did. Every failure has to fail safely. So I built for visibility: a PowerShell remediation and intelligence platform with self-healing behavior and SQL reporting that turned invisible infrastructure into something a manager could actually see and act on.
 
