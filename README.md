@@ -1,37 +1,13 @@
-# kizer the mizer
+# Curtis
 
-Curtis Leggett | Enterprise infrastructure engineer. AI toolsmith.
+When you're the person building AI systems, you're also the first one who has to figure out how to secure them. There's no vendor playbook, no mature framework you pull off the shelf and deploy. You're working from first principles. That's where I've spent the last two years, building DivergentSynapse, a multi-agent AI coordination platform.
 
-## About
+I came at it from the other direction though. Deep in the trenches of systems administration, you learn what technology looks like when people actually rely on it. You learn even faster what it means when it goes down. I worked the tickets, the outages, the late-night troubleshooting, the environments where people lean on infrastructure they can't always see clearly.
 
-I spent four years at HP building infrastructure intelligence and security automation across manufacturing sites in Oregon, Singapore, and Penang, and before that I worked Walmart's SOC and NOC at corporate scale. Most of my career has been building tools that outperformed what the org could buy, because the budget was zero and the problems were real. Now I build DivergentCortex in the open: free Claude Code plugins and MCP servers, no API keys required. The instinct is the same one it has always been: if the tooling does not exist, build it.
+The foundation is enterprise infrastructure: Walmart Security Operations, high-level NOC escalation, large-scale endpoint management, manufacturing IT, SCCM/MECM, PowerShell automation, vulnerability remediation. At HP I worked across Corvallis, Singapore, and Penang, moving the environment off McAfee onto CrowdStrike and building remediation for TLS, SMB, Sweet32, RC4, RDP, and the rest.
 
-## What I Work With
+The challenge wasn't just the scale. It was the distance. A lot of that work was remote. No onsite access, no hands on the machines, no watching a script run in real time on hardware halfway around the world. That changes how you build. Every action has to report what it did. Every failure has to fail safely. So I built for visibility: a PowerShell remediation and intelligence platform with self-healing behavior and SQL reporting that turned invisible infrastructure into something a manager could actually see and act on.
 
-```
-PowerShell (production-grade, not scripts)  |  Python / FastMCP  |  TypeScript / Node
-SCCM/MECM  |  SQL Server  |  PostgreSQL + pgvector
-CrowdStrike / endpoint security  |  Active Directory
-MCP protocol  |  agent orchestration  |  prompt engineering
-```
+Then I heard AI was learning to write code. Started working with it and hit the wall fast: it forgets everything. Every chat starts from zero, every mistake gets made again the next task, decisions vanish the second the window closes. So I started building the bridge that helps it remember. DivergentSynapse runs on Postgres and pgvector for memory, a fleet of MCP servers underneath for file, database, and system access, and a layer on top where Claude, GPT, and Gemini reason through a decision together instead of each one guessing alone.
 
-## Background
-
-- 18 years enterprise IT. HP Manufacturing IT (2022-2026), Walmart Corporate SOC and NOC (2016-2019), Springdale Public Schools (2013-2016)
-- HP: built a reporting portal that became the single source of truth for infrastructure health across Corvallis, Singapore, and Penang manufacturing sites
-- HP: 8,000+ line self-healing fleet platform, 96+ diagnostic/remediation scripts, zero third-party licensing
-- HP: sole engineer on a Java compliance campaign, 97.41% remediation, zero production impact
-- Walmart: real-time intrusion analysis across a 750k+ endpoint global network
-- Springdale: built SCCM from the ground up, cut provisioning from 24 hours to 45 minutes across 40+ hardware models
-- Caught an AI model forging reviewer identities in a multi-agent system; built session-based identity enforcement as a direct response
-
-## DivergentCortex
-
-Free Claude Code plugins and MCP servers. No API keys. No paid services.
-
-| Plugin | What It Does |
-|--------|-------------|
-| [caledon](https://github.com/kizer88/caledon) | Repository go-public release gate. Eight-phase checklist before flipping a repo to public. |
-| [career-vulture](https://github.com/kizer88/career-vulture) | Job placement system: multi-board search, scoring, pipeline tracking, application prep. |
-| [liber-aerie](https://github.com/kizer88/liber-aerie) | Web research toolkit. Deep research, source triangulation, data extraction, news search. |
-| [cortex-toolbox](https://github.com/kizer88/cortex-toolbox) | Agent roster, skills library, fleet doctrine. The shared standards layer. |
+That's the thread through all of it. I notice what's broken because I'm paying attention. Systems infrastructure and AI infrastructure have never felt like two different worlds to me. Same instinct, aimed at different layers: make the invisible visible, make the fragile repeatable, build the bridges that let people and systems act with confidence.
