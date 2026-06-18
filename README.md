@@ -1,6 +1,4 @@
-# Curtis
-
-When you're the person building AI systems, you're also the first one who has to figure out how to secure them. There's no vendor playbook, no mature framework you pull off the shelf and deploy. You're working from first principles. That's where I've spent the last two years, building DivergentSynapse, a multi-agent AI coordination platform.
+When this all started and you're the person figuring out how to build AI systems, you were also the one who had to work on figuring out how to secure them. There wasn't much of a playbook, no mature framework to pull off the shelf and deploy. You were working from first principles. That's where I've spent the last two years, building DivergentSynapse, a multi-agent AI coordination platform.
 
 I came at it from the other direction though. Deep in the trenches of systems administration, you learn what technology looks like when people actually rely on it. You learn even faster what it means when it goes down. I worked the tickets, the outages, the late-night troubleshooting, the environments where people lean on infrastructure they can't always see clearly.
 
